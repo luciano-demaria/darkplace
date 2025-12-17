@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "DollyR";
-	src: url(Dolly-Regular.tff);
+	src: url(Dolly-Roman.otf);
 }
 @font-face {
 	font-family: "DollySC";
@@ -21,3 +21,4 @@ h1 {
 p {
 	font-family: "DollySC";
 }
+
