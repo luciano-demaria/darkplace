@@ -10,8 +10,17 @@
 	src: url(Dolly-SmallCaps.otf);
 }
 
-/* Sets background color and text alignment for entire page */
+/* Sets default font size and color for all text elements on page */
+html {
+	font-family: "DollySC";
+	font-size: 16px;
+	font-weight: normal;
+	color: white;
+}
+
+/* Sets background color, text alignment, and padding for entire page */
 body {
+	padding: 20px 50px 20px 20px;
 	background-color: black;
 	text-align: left;
 }
@@ -24,27 +33,26 @@ a {
 /* Sets default font for all 'Header 1' elements */
 h1 {
 	font-family: "DollyR";
-	font-weight: normal;
-	font-size: x-large;
-	color: white;
+	font-size: 1.5rem;
+	font-weight: 500;
 }
 
 /* Sets default font for all 'Header 2' elements */
 h2 {
 	font-family: "DollyR";
-	font-weight: 200;
+	font-weight: 300;
 	color: white;
 
 /* Sets default font for all 'Paragraph' elements */
 p {
-	font-family: "DollySC";
 	color: white;
 }
 
 /* Sets default font for all 'Footer' elements */
 footer {
 	font-family: "Times New Roman", Times, serif;
-	font-size: xx-small;
+	font-size: 0.5rem;
 	color: gray;
 }
+
 
