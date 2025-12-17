@@ -33,26 +33,29 @@ a {
 /* Sets default font for all 'Header 1' elements */
 h1 {
 	font-family: "DollyR";
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	font-weight: 500;
 }
 
 /* Sets default font for all 'Header 2' elements */
 h2 {
 	font-family: "DollyR";
+	font-size: 2rem;
 	font-weight: 300;
 	color: white;
 
 /* Sets default font for all 'Paragraph' elements */
 p {
+	font-size: 1rem;
 	color: white;
 }
 
 /* Sets default font for all 'Footer' elements */
 footer {
-	font-family: "Times New Roman", Times, serif;
+	font-family: times-new-roman;
 	font-size: 0.5rem;
 	color: gray;
 }
+
 
 
