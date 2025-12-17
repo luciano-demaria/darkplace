@@ -10,7 +10,13 @@
 	src: url(Dolly-SmallCaps.otf);
 }
 
-/* Sets default font size and color for all text elements on page */
+/* Imports Custom Font (Times New Roman) */
+@font-face {
+	font-family: "Times";
+	src: url(Times-New-Roman.otf);
+}
+
+/* Sets default font format for all text elements on page */
 html {
 	font-family: "DollySC";
 	font-size: 16px;
@@ -33,29 +39,30 @@ a {
 /* Sets default font for all 'Header 1' elements */
 h1 {
 	font-family: "DollyR";
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	font-weight: 500;
 }
 
 /* Sets default font for all 'Header 2' elements */
 h2 {
 	font-family: "DollyR";
+	font-style: italic;
 	font-size: 2rem;
-	font-weight: 300;
+	font-weight: 200;
 	color: white;
 
 /* Sets default font for all 'Paragraph' elements */
 p {
-	font-size: 1rem;
 	color: white;
 }
 
 /* Sets default font for all 'Footer' elements */
 footer {
-	font-family: times-new-roman;
+	font-family: "Times";
 	font-size: 0.5rem;
 	color: gray;
 }
+
 
 
 
