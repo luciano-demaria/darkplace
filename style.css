@@ -20,8 +20,15 @@ body {
 /* Sets default font for all 'Header 1' elements */
 h1 {
 	font-family: "DollyR";
+	font-weight: normal;
 	color: white;
 }
+
+/* Sets default font for all 'Header 2' elements */
+h2 {
+	font-family: "DollyR";
+	font-weight: 200;
+	color: white;
 
 /* Sets default font for all 'Paragraph' elements */
 p {
@@ -29,5 +36,9 @@ p {
 	color: white;
 }
 
-
-
+/* Sets default font for all 'Footer' elements */
+footer {
+	font-family: "Times New Roman", Times, serif;
+	font-size: x-small;
+	color: #969696;
+}
