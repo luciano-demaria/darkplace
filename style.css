@@ -1,24 +1,32 @@
+/* Imports Custom Font (Dolly Roman) */
 @font-face {
-	font-family: "DollyR";
+	font-family: "DollyR"; 
 	src: url(Dolly-Roman.otf);
 }
+
+/* Imports Custom Font (Dolly SmallCaps) */
 @font-face {
 	font-family: "DollySC";
 	src: url(Dolly-SmallCaps.otf);
 }
 
-
+/* Sets background color and text alignment for entire page */
 body {
+	background-color: black;
 	padding: 20% 10%;
 	text-align: center;
 }
 
+/* Sets default font for all 'Header 1' elements */
 h1 {
 	font-family: "DollyR";
-
+	color: white;
 }
 
+/* Sets default font for all 'Paragraph' elements */
 p {
 	font-family: "DollySC";
+	color: white;
 }
+
 
