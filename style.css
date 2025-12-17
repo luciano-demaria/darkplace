@@ -13,14 +13,19 @@
 /* Sets background color and text alignment for entire page */
 body {
 	background-color: black;
-	padding: 5% 5%;
 	text-align: left;
+}
+
+/* Sets default font for all 'Link' elements */
+a {
+	color: gray;
 }
 
 /* Sets default font for all 'Header 1' elements */
 h1 {
 	font-family: "DollyR";
 	font-weight: normal;
+	font-size: x-large;
 	color: white;
 }
 
@@ -39,6 +44,7 @@ p {
 /* Sets default font for all 'Footer' elements */
 footer {
 	font-family: "Times New Roman", Times, serif;
-	font-size: x-small;
-	color: #969696;
+	font-size: xx-small;
+	color: gray;
 }
+
