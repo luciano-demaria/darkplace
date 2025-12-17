@@ -13,8 +13,8 @@
 /* Sets background color and text alignment for entire page */
 body {
 	background-color: black;
-	padding: 20% 10%;
-	text-align: center;
+	padding: 5% 5%;
+	text-align: left;
 }
 
 /* Sets default font for all 'Header 1' elements */
@@ -28,5 +28,6 @@ p {
 	font-family: "DollySC";
 	color: white;
 }
+
 
 
