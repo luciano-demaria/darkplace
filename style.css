@@ -16,10 +16,10 @@
 	src: url(Times-New-Roman.otf);
 }
 
-/* Sets default font format for all text elements on page */
+/* Sets default formatting for all text elements on page */
 html {
-	font-family: "DollySC";
-	font-size: 16px;
+	font-family: "DollyR";
+	font-size: 20px;
 	font-weight: normal;
 	color: white;
 }
@@ -31,38 +31,119 @@ body {
 	text-align: left;
 }
 
-/* Sets default font for all 'Link' elements */
+/* Sets default formatting for all 'Link' elements */
 a {
 	color: gray;
 }
 
-/* Sets default font for all 'Header 1' elements */
+/* Sets default formatting for all 'Header 1' elements */
 h1 {
 	font-family: "DollyR";
 	font-size: 3.5rem;
-	font-weight: 500;
+	font-weight: 100;
+	margin: 15px 0px;
 }
 
-/* Sets default font for all 'Header 2' elements */
+/* Sets default formatting for all 'Header 2' elements */
 h2 {
 	font-family: "DollyR";
-	font-style: italic;
-	font-size: 2rem;
+	/*font-style: italic;*/
+	font-size: 1.75rem;
 	font-weight: 200;
-	color: white;
-
-/* Sets default font for all 'Paragraph' elements */
-p {
-	color: white;
+	margin: 0px 0px;
 }
 
-/* Sets default font for all 'Footer' elements */
+/* Sets default formatting for all 'Paragraph' elements */
+p {
+	display: inline-block;
+	font-family: "DollyR";
+	line-height: 150%;
+}
+
+.note {
+	font-size: 0.75rem;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: block;
+}
+/*
+div {
+	display: none;
+	opacity: 1;
+	transition: opacity 1s, display 1s allow-discrete;
+}
+
+.showing {
+	opacity: 1;
+	display: block;
+}
+
+@starting-style {
+	.showing {
+		opacity: 0;
+	}
+}
+*/
+button {
+	background: none;
+	border: 0;
+	padding: 0px 0px 20px 0px;
+	font-family: "DollySC";
+	font-size: 1rem;
+	color: white;
+	text-align: left;
+}
+button:active {
+	border-style: outset;
+}
+
+button:hover span {
+	font-weight: 900;
+}
+.discrete {
+	opacity: .2;
+	font-size: .8rem;
+}
+
+.citation {
+	position: fixed;
+	top: 460px;
+	font-family: "Times";
+	font-size: 0.5rem;
+	color: rgb(160, 160, 160);
+}
+
+/* Sets default formatting for all 'Footer' elements */
 footer {
+	position: fixed;
+	top: 475px;
 	font-family: "Times";
 	font-size: 0.5rem;
 	color: gray;
 }
 
+.text-group {
+	color: white;
+}
+.button-group {
+	position: fixed;
+	top: 300px;
+	width: 100%;
+}
 
+/* Fixes line spacing issues with superscript and subscripts */
+sup, sub {
+	color: rgb(160, 160, 160);
+	vertical-align: baseline;
+	position: relative;
+	top: -0.4em;
+}
 
+sub { 
+	top: 0.4em; 
+}
 
+.loaded {
+	opacity: 1;
+	transition-duration: 500ms;
+}
