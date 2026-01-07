@@ -3,7 +3,9 @@ var tempPageHTML = "";
 // Modifies the main container to show a target element's content based on its ID
 function changePage(targetElementId) {
     const container = document.getElementById("container");
-    console.log("Container is " + container);
+    if (container.classList.contains("loaded")) {
+        container.classList.remove("loaded");
+    }
     const targetElement = document.getElementById(String(targetElementId));
     if (targetElement == null) {
         console.log("Target element is null");
@@ -14,4 +16,4 @@ function changePage(targetElementId) {
 }
 
 // Initial page load
-changePage("flipNote");
+changePage("start");

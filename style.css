@@ -16,6 +16,11 @@
 	src: url(Times-New-Roman.otf);
 }
 
+@font-face {
+	font-family: "Pinyon";
+	src: url(PinyonScript-Regular.otf);
+}
+
 /* Sets default formatting for all text elements on page */
 html {
 	font-family: "DollyR";
@@ -26,7 +31,7 @@ html {
 
 /* Sets background color, text alignment, and padding for entire page */
 body {
-	padding: 20px 50px 20px 20px;
+	padding: 20px 50px 20px 50px;
 	background-color: black;
 	text-align: left;
 }
@@ -40,6 +45,8 @@ a {
 h1 {
 	font-family: "DollyR";
 	font-size: 3.5rem;
+	font-weight: 100;
+	margin: 15px 0px;
 	font-weight: 100;
 	margin: 15px 0px;
 }
@@ -143,7 +150,13 @@ sub {
 	top: 0.4em; 
 }
 
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
 .loaded {
-	opacity: 1;
-	transition-duration: 500ms;
+	animation-duration: 300ms;
+	animation-timing-function: ease-in;
+	animation-name: fadeIn;
 }

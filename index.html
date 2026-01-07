@@ -8,99 +8,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="container">
-      <div class="text-group">
-      </div>
-      <div class="button-group">
-      </div>
-      <div class="citation">
-      </div>
-    </div>
-    <div style="position: fixed; bottom: 50px;">
-    The final webpage will be a text-based game based on the game "Welcome to the Dark Place" by Zeekerss. I'm currently</br>
-    troubleshooting the navigation system; I had it working not long ago. Above is an example of what the final structure</br>
-    and citations might look like.
-    </div> 
-    <!--<footer>
-      Created by <a href="https://www.linkedin.com/in/luciano-demaria-a021692b5/">Luciano DeMaria</a> for UNT's MUAG 4200 (Video Games: Behind the Scenes)</br>
+    <hgroup>
+      <h1>'The Dark Place' - A Media-Rich Site</h1>
+      <h2>Aesthetic based upon <a href="https://zeekerss.itch.io/">Zeekerss'</a> 'Welcome to the Dark Place'</br>
+          Created by <a href="https://www.linkedin.com/in/luciano-demaria-a021692b5/">Luciano DeMaria</a> for UNT's MUAG 4200 (Video Games: Behind the Scenes)</h2>
+    </hgroup>
+    <p>Text for the site will eventually go here. It may describe some things about the game itself.</br>
+       I intend to separate the page into categories based on the frameworks we learn over the next couple of weeks.
+    </p>
+    <footer>
       Material on this page includes copyrighted content owned by Zeekerss ('Welcome to the Dark Place') and Underwear (Dolly Roman and Dolly SmallCaps typefaces)</br>
       Used under the doctrine of Fair Use (U.S. Code Title 17, Section 107) for non-profit educational/commentary purposes only.</br>
       Only small, relevant portions of the original 'Welcome to the Dark Place' game are used, and no profit is derived from this distribution.</br>
       Luciano DeMaria does not claim ownership of the incorporated materials; rights belong to their respective owners.</br>
       This material is for personal study and internal use; further distribution or commercial use requires permission from the copyright holder.
-    </footer>-->
+    </footer>
   </body>
 </html>
 <link rel="stylesheet" href="style.css" />
 
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- Below are different elements for the initial container to be swapped with when buttons are pressed -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
-<div id="start" hidden>
-  <div class="text-group">
-    <p>
-    I wake up on the red carpeted floor of a library. There are some shelves ahead of me and an open door</br>
-    off to the right. A warm breeze drifts in from behind me, where I notice an open door leading outside.
-    </p>
-  </div>
-  <div class="button-group">
-    <button onclick="changePage(shelves)"><span>Go to shelves.</span></button></br>
-    <button onclick="changePage(office)"><span>Go to office.</span></button></br>
-    <button onclick="changePage(exit)"><span>Go to exit.</span></button>
-  </div>
-</div>
 
-<div id="shelves" hidden>
-    <p>
-    Upon moving closer, I realize that the wooden shelves are actually made of concrete. The aisles appear to be ordered alphabetically.</br>
-    </p>
-  <div class="button-group">
-    <button onclick="changePage(aThruE)"><span>Walk through 'A-E'.</span></button></br>
-    <button onclick="changePage(fThruI)"><span>Walk through 'F-I'.</span></button></br>
-    <button onclick="changePage(jThruR)"><span>Walk through 'J-R'.</span></button>
-    <button onclick="changePage(otherAisles)"><span>Look at the other aisles.</span></button>
-  </div>
-</div>
 
-<div id="readNote" hidden>
-  <div class="text-group">
-    <p>
-      The note reads like the beginning of an essay:</br>
-    </br>
-      "<i>Welcome to the Dark Place</i> is a case study in the buildup of tension through impeding the player's</br>
-      senses. With little to see other than a black screen and some text descriptions, deep listening is one of</br>
-      the only methods by which the player is allowed to percieve the game world."
-    </p>
-  </div>
-  <div class="button-group">
-    <button onclick="changePage(flipNote)"><span>Flip the note.</span></button></br>
-    <button onclick="changePage(startAgain)"><span>Go elsewhere.</span></button>
-  </div>
-</div>
 
-<div id="flipNote" hidden>
-  <div class="text-group">
-    <p>
-      On the back of the note, more is written in tiny scrawls:
-    </p>
-    <p class="note">
-      "Ernest H. Lindley writes: 'The animals most gifted with experimenting techniques, those which utilize changes</br>
-      in environment most promptly, will be favored in the struggle for existence.'<sup>[ 1 ]</sup> The Dark Place is dreamlike, and</br>
-      it does not function in the same way that our reality functions. It serves as an unexplored environment for</br>
-      us to adapt to. Of course, adaptation often manifests as the result of failure-"
-    </p>
-    <p>
-      The handwriting becomes less and less legible until it becomes chicken scratch.
-    </p>
-  </div>
-  <div class="button-group">
-    <button onclick="changePage(readNote)"><span>Flip the note.</span></button></br>
-    <button onclick="changePage(startAgain)"><span>Go elsewhere.</span></button>
-  </div>
-  <div class="citation">
-    1. Lindley, Ernest H. “A Study of Puzzles with Special Reference to the Psychology of Mental Adaptation.” <i>The American Journal of Psychology</i> 8, no. 4 (1897): 431–93. https://doi.org/10.2307/1411772.
-  </div>
-</div>
 
-<script src="gameNav.js"></script>
+
