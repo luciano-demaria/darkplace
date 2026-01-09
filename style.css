@@ -112,7 +112,7 @@ button:hover span {
 
 .citation {
 	position: fixed;
-	top: 460px;
+	bottom: 100px;
 	font-family: "Times";
 	font-size: 0.5rem;
 	color: rgb(160, 160, 160);
@@ -157,4 +157,17 @@ sub {
 	animation-duration: 300ms;
 	animation-timing-function: ease-in;
 	animation-name: fadeIn;
+}
+
+.info {
+	display: block;
+	font-family: "DollyR";
+	line-height: 150%;
+	text-align: left;
+	padding-left: 30px;
+}
+
+hr.solid {
+  border-top: 1px solid #ffffff;
+  line-height: 150%;
 }
