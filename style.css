@@ -112,6 +112,7 @@ button:hover span {
 
 .citation {
 	position: fixed;
+	left: 50px;
 	bottom: 100px;
 	font-family: "Times";
 	font-size: 0.5rem;
@@ -170,4 +171,24 @@ sub {
 hr.solid {
   border-top: 1px solid #ffffff;
   line-height: 150%;
+}
+
+.imgCaption {
+	font-family: "Times";
+	font-style: italic;
+	display: block;
+	text-align: center;
+	font-size: 0.8rem;
+	color: rgb(160, 160, 160);
+}
+
+.infoImg {
+	display: block;
+	width: 60%;
+	border: 2px solid white;
+}
+
+.infoImgContainer {
+	display: flex;
+	justify-content: center;
 }

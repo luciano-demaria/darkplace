@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "/Users/rimworld-killbox-v2/Documents/VS Code/darkplace/darkplaceLibrary/index.html"
+            "file": "/Users/rimworld-killbox-v2/Documents/VS Code/darkplace/darkplaceLibraryNew/index.html"
         }
     ]
 }

@@ -16,4 +16,4 @@ function changePage(targetElementId) {
 }
 
 // Initial page load
-changePage("start");
+changePage("infoBinder");

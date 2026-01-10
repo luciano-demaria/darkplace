@@ -16,14 +16,6 @@
       <div class="citation">
       </div>
     </div>
-    <!--<footer>
-      Created by <a href="https://www.linkedin.com/in/luciano-demaria-a021692b5/">Luciano DeMaria</a> for UNT's MUAG 4200 (Video Games: Behind the Scenes)</br>
-      Material on this page includes copyrighted content owned by Zeekerss ('Welcome to the Dark Place') and Underwear (Dolly Roman and Dolly SmallCaps typefaces)</br>
-      Used under the doctrine of Fair Use (U.S. Code Title 17, Section 107) for non-profit educational/commentary purposes only.</br>
-      Only small, relevant portions of the original 'Welcome to the Dark Place' game are used, and no profit is derived from this distribution.</br>
-      Luciano DeMaria does not claim ownership of the incorporated materials; rights belong to their respective owners.</br>
-      This material is for personal study and internal use; further distribution or commercial use requires permission from the copyright holder.
-    </footer>-->
   </body>
 </html>
 <link rel="stylesheet" href="style.css" />
@@ -31,175 +23,6 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- Below are different elements for the initial container to be swapped with when buttons are pressed -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-
-<!-- Start Screen -->
-<div id="start" hidden>
-  <div class="text-group">
-    <p>
-    I wake up on the red carpeted floor of a library. There are some shelves behind a circulation desk ahead</br>
-    of me and an open door off to the right. A warm breeze drifts in from behind me, where I notice a cracked</br>
-    entry door. I can't quite see from here, but looks bright outside.
-    </p>
-  </div>
-  <div class="button-group">
-    <button onclick="changePage('frontDesk')"><span>Go to front desk.</span></button></br>
-    <button onclick="changePage('shelves')"><span>Go to shelves.</span></button></br>
-    <button onclick="changePage('office')"><span>Go to office.</span></button></br>
-    <button onclick="changePage('exit')"><span>Go to door.</span></button></br>
-    <button class="discrete" onclick="changePage('allInfo')"><span>
-      ...Or navigate to a less gamified version of the site with all citations and commentary.</br>
-      You can always refresh the page to return to this option.</span></button>
-  </div>
-</div>
-
-<div id="startAgain" hidden>
-  <div class="text-group">
-    <p>
-    I'm near the entrance of the library. There are some shelves behind the circulation desk ahead</br>
-    of me and an open door off to the right. The entry door is still cracked open with a warm breeze</br>
-    accompanied by streams of flickering light. It smells smokey.
-    </p>
-  </div>
-  <div class="button-group">
-    <button onclick="changePage('frontDesk')"><span>Go to front desk.</span></button></br>
-    <button onclick="changePage('shelves')"><span>Go to shelves.</span></button></br>
-    <button onclick="changePage('office')"><span>Go to office.</span></button></br>
-    <button onclick="changePage('exit')"><span>Go to door.</span></button>
-  </div>
-</div>
-
-<!-- Front Desk -->
-<div id="frontDesk" hidden>
-    <p>
-    As I walk up to the circulation desk, I notice a distinct lack of computers or checkout systems. Instead,</br>
-    a journal sits on the desk alongside a fountain pen. There's also a CD player and a pair of headphones towards</br>
-    one end of the desk.
-    </p>
-  <div class="button-group">
-    <button onclick="changePage('readJournal')"><span>Open the journal.</span></button></br>
-    <button onclick="changePage('startAgain')"><span>Go elsewhere.</span></button>
-  </div>
-</div>
-
-<div id="frontDeskAgain" hidden>
-    <p>
-    The journal rests on the desk alongside a fountain pen. The CD player waits patiently.
-    </p>
-  <div class="button-group">
-    <button onclick="changePage('readJournal')"><span>Open the journal.</span></button></br>
-    <button onclick="changePage('startAgain')"><span>Go elsewhere.</span></button>
-  </div>
-</div>
-
-<!-- Journal (page 1) -->
-<div id="readJournal" hidden>
-  <div class="text-group">
-    <p>
-      On the first page of the journal, a page header is written in a meticulous, almost machine-like</br>
-      calligraphic style:
-    </p>
-      <p style="font-family: 'Pinyon'; display: block; font-size: 2rem; margin-top: 0px; margin-bottom: 0px;">
-        "What is Real?"
-      </p>
-    <p>
-      The rest of the page is blank.
-    </p>
-  </div>
-  <div class="button-group">
-    <button onclick="changePage('readJournal2')"><span>Turn the page.</span></button></br>
-    <button onclick="changePage('writeSomething')"><span>Write something.</span></button></br>
-    <button onclick="changePage('startAgain')"><span>Go elsewhere.</span></button>
-  </div>
-</div>
-
-<!-- Journal (page 2) -->
- <div id="readJournal2" hidden>
-  <div class="text-group">
-    <p>
-      The second page of the journal is completely blank. In fact, the rest of the journal appears to be</br>
-      be blank. There's a hastily-folded note tucked between the second and third pages.
-    </p>
-  </div>
-  <div class="button-group">
-    <button onclick="changePage('readNote')"><span>Read the note.</span></button></br>
-    <button onclick="changePage('startAgain')"><span>Go elsewhere.</span></button>
-  </div>
-</div>
-
-<!-- Write Something -->
-<div id="writeSomething" hidden>
-    <p>
-    Whoever started writing this essay probably won't mind if I add a few thoughts of my own. I treat the header like a prompt and write:</br>
-    </p>
-  <div class="button-group">
-    <button onclick="changePage('lacanReal')"><span>Ponder Lacan.</span></button></br>
-    <button onclick="changePage('beaudrilliardReal')"><span>Ponder Beaudrilliard.</span></button></br>
-    <button onclick="changePage('startAgain')"><span>Go elsewhere.</span></button>
-  </div>
-</div>
-
-<div id="lacanReal" hidden>
-    <p>
-      I begin to write:
-    </p>
-    <p class="note">
-      (Here I will compare Lacan's concept of 'the Real' with Dimlose, the area in the game I feel is closest to reaching the impossibility of fully representing the Real.)
-  <div class="button-group">
-    <button onclick="changePage('readJournal')"><span>Stop writing.</span></button>
-  </div>
-</div>
-
-<div id="beaudrilliardReal" hidden>
-    <p>
-      I begin to write:
-    </p>
-    <p class="note">
-      (Here I will argue with myself about whether the Dark Place can be considered hyperreal in the sense that Beaudrilliard writes about.)
-  <div class="button-group">
-    <button onclick="changePage('readJournal')"><span>Stop writing.</span></button>
-  </div>
-</div>
-<!-- Shelves -->
-<div id="shelves" hidden>
-    <p>
-    Upon moving closer, I realize that the wooden shelves are actually made of concrete. The aisles appear to be ordered alphabetically</br>
-    with some having end caps that display a variety of books, magazines, and CDs.
-    </p>
-  <div class="button-group">
-    <button onclick="changePage('aThruE')"><span>Walk through 'A-E'.</span></button></br>
-    <button onclick="changePage('fThruI')"><span>Walk through 'F-I'.</span></button></br>
-    <button onclick="changePage('aisleEndCap')"><span>Go to an end cap.</span></button>
-    <button onclick="changePage('shelves2')"><span>Look at the other shelves.</span></button>
-  </div>
-</div>
-
-<div id="shelves2" hidden>
-    <p>
-
-    </p>
-  <div class="button-group">
-    <button onclick="changePage('jThruR')"><span>Walk through 'J-R'.</span></button></br>
-    <button onclick="changePage('sThruZ')"><span>Walk through 'S-Z'.</span></button></br>
-    <button onclick="changePage('aisleEndCap')"><span>Go to an end cap.</span></button>
-    <button onclick="changePage('startAgain')"><span>Go elsewhere.</span></button>
-  </div>
-
-<!-- Reading note -->
-<div id="readNote" hidden>
-  <div class="text-group">
-    <p>
-      The note reads like the beginning of an essay:</br>
-    </br>
-      "<i>Welcome to the Dark Place</i> is a case study in the buildup of tension through impeding the player's</br>
-      senses. With little to see other than a black screen and some text descriptions, deep listening is one of</br>
-      the only methods by which the player is allowed to percieve the game world."
-    </p>
-  </div>
-  <div class="button-group">
-    <button onclick="changePage('flipNote')"><span>Flip the note.</span></button></br>
-    <button onclick="changePage('frontDeskAgain')"><span>Close the journal.</span></button>
-  </div>
-</div>
 
 <!-- Flipped Note -->
 <div id="flipNote" hidden>
@@ -230,34 +53,486 @@
 <!-- All info about the game and commentary with citations (less gamified version of site for easy grading) -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
-<div id="allInfo" hidden>
-  <div class="text-group">
-    <h2 style="text-align: center;">An Analysis of Zeekerss' 'Welcome to the Dark Place'</h2>
-    <h3 style="text-align: center;">Luciano DeMaria</h3>
-    <h3>Text-Based Storytelling in WttDP</h3>
-      <p class="info">
-        (import from google doc)
-      </p>
-    <hr class="solid" style="margin-top: 40px;"/>
-    <h3>Narrative Arc of WttDP</h3>
-      <p class="info">
-        (import from google doc)
-      </p>
-    <hr class="solid" style="margin-top: 40px;"/>
-    <h3>The Depiction of Closure in WttDP</h3>
-      <p class="info">
-        (import from google doc)
-      </p>
-    <hr class="solid" style="margin-top: 40px;"/>
-    <h3>Aphorisms of WttDP</h3>
-      <p class="info">
-        (import from google doc)
-      </p>
-    <hr class="solid" style="margin-top: 40px;"/>
-    <div class="citation">
-      1. Lindley, Ernest H. “A Study of Puzzles with Special Reference to the Psychology of Mental Adaptation.” <i>The American Journal of Psychology</i> 8, no. 4 (1897): 431–93. https://doi.org/10.2307/1411772.
-    </div>
+<!-- Intro Page -->
+<div id="infoBinder" hidden>
+  <p class="text-group">
+    I wake up in a void, an endless black nothing as far as the eye can see. Regardless of this, I feel a strange sense</br>
+    of calm. In front of me, there's a binder with a sticker on the cover: "An Analysis of Zeekerss' <i>Welcome to the Dark Place</i>".</br>
+    It has several tabs, sticky notes, and bookmarks protruding from behind the cover.
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('binderIntro')"><span>Open the binder.</span></button></br>
   </div>
 </div>
+
+<!-- Binder Start Page -->
+<div id="binderIntro" hidden>
+  <p class="text-group">
+    I open the binder and discover a composition journal inside. The area just to the right of the binding has been</br>
+    brutishly hole-punched by the prongs of the binder, holding the journal in place. The 'Title' section of the</br>
+    journal is empty, but there is a name in the 'Author' section:</br>
+    </br>
+    "Luciano DeMaria"</br>
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storytelling1')"><span>Flip to the 'Story' tab.</span></button></br>
+    <button onclick="changePage('narrativeArc')"><span>Flip to the 'Nar. Arc' tab.</span></button></br>
+    <button onclick="changePage('comments')"><span>Flip to the 'Comments' tab.</span></button></br>
+  </div>
+</div>
+
+<!-- Binder Start Page (for repeated visits) -->
+<div id="binderIntroAgain" hidden>
+  <p class="text-group">
+    The composition journal sits in the binder, mistreated. I silently wonder if it would cry if it had a voice.
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storytelling1')"><span>Flip to the 'Story' tab.</span></button></br>
+    <button onclick="changePage('narrativeArc')"><span>Flip to the 'Nar. Arc' tab.</span></button></br>
+    <button onclick="changePage('comments')"><span>Flip to the 'Comments' tab.</span></button></br>
+  </div>
+</div>
+
+<!-- Storytelling (page 1) -->
+<div id="storytelling1" hidden>
+  <p class="text-group">
+    There is a long paragraph here:</br>
+    </br>
+    "STORYTELLING.</br>
+    <i>Welcome to the Dark Place</i> is a text-based psychological horror game told through the perspective of a (mostly)</br>
+    silent protagonist. Though the physicality of the Dark Place is never explicitly explained, we begin to understand it</br>
+    as a construction of the protagonist's mind throughout the game. The Dark Place steals from familiar places in the</br>
+    protagonist's life, representing them as hellish versions of themselves twisted by anxiety and dread."
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storytelling2')"><span>Keep reading.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+<!-- Storytelling (page 2) -->
+<div id="storytelling2" hidden>
+  <p class="text-group">
+    "The player finds out very quickly in-game that they are provided an illusion of control in many cases: there are only</br>
+    a couple of methods of proceeding through the game without dying and restarting their journey from the beginning. A map is</br>
+    provided to the player to map out what they have explored, but that is one of very few tools offered to the player to make</br>
+    things easier. Most of the game is spent discovering new locations as once you have experienced all a location has to offer,</br>
+    there is little reason to revisit it."
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storytelling1')"><span>Go back.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+<!-- Narrative Arc Starting Page -->
+<div id="narrativeArc" hidden>
+  <p class="text-group">
+    There's some writing here:</br>
+    </br>
+    "NARRATIVE ARC.</br>
+    In order to analyze the narrative arc of <i>Welcome to the Dark Place</i>, we must first find a way to outline it.</br>
+    Dan Harmon's Story Circle is a narrative model that has been used in multiple narrative design classes I've taken,</br>
+    so that is what you'll see in the coming pages."
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storyCircle1')"><span>Keep reading.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+  <!-- YOU -->
+<div id="storyCircle1" hidden>
+  <p class="text-group">
+    "YOU.</br>
+    The protagonist is vaguely established as someone who is struggling with some kind of mental trauma. Their world is</br>
+    depicted in abstractions: a carjacking, an exploding deer, an aimless wander into the woods. We never get an exact</br>
+    description of what troubles them, but we know from the beginning that something is gravely wrong."
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storyCircle2')"><span>Keep reading.</span></button></br>
+    <button onclick="changePage('narrativeArc')"><span>Go back.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+  <!-- NEED -->
+<div id="storyCircle2" hidden>
+  <p class="text-group">
+    "NEED.</br>
+    The protagonist is plunged into the Dark Place in a mind-bending series of events, falling out of 'the Cloud' and</br>
+    landing in a dense forest next to a note. We don't know exactly why they have landed here, but a bit of poetry in</br>
+    the intro proclaims that the Dark Place is 'where all the people go.' The note they have landed next to contains a</br>
+    set of rules, but that is all the information about this place that they have. With that in mind, a need is established:</br>
+    <u>Get out of the Dark Place.</u>"
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storyCircle3')"><span>Keep reading.</span></button></br>
+    <button onclick="changePage('storyCircle1')"><span>Go back.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+  <!-- GO -->
+<div id="storyCircle3" hidden>
+  <p class="text-group">
+    The text squishes as the writer reaches the bottom of the page. There's a note here, too.
+    <p class="note">
+      "GO.</br>
+      The protagonist starts to blindly explore the Dark Place, keeping track of where they walk on an empty map that gradually</br>
+      becomes more full as they explore (shown below). In a world with very little guidance, the threshold that is crossed to</br>
+      determine the start of this stage can sometimes feel blurred, but I like to think that the moment the player decides to</br>
+      click a directional button (Go North, Go East, Go South, Go West), they have officially set out on their journey and</br>
+      crossed that threshold."
+    </p>
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storyCircle4')"><span>Turn page.</span></button></br>
+    <button onclick="changePage('storyCircle2')"><span>Go back.</span></button></br>
+    <button onclick="changePage('incompleteMap')"><span>Look at note.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+<div id="incompleteMap" hidden>
+  <p class="text-group">
+    <div class="infoImgContainer">
+      <img class="infoImg" src="darkPlaceMap.png"/>
+    </div>
+    <p class="imgCaption" hidden>My map of the game when I had just started to plot out biomes.</p>
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storyCircle3')"><span>Carry on.</span></button>
+  </div>
+</div>
+
+  <!-- SEARCH -->
+<div id="storyCircle4" hidden>
+  <p class="text-group">
+    "SEARCH. </br>
+    The protagonist's aimless wanders turn into educated guesses based on the information they recieve from NPCs, notes, and</br>
+    interactions they encounter throughout the game. The protagonist begins to understand the unforgiving nature of the Dark</br>
+    Place, its biomes, and its inhabitants. Eventually, they realize that there are electronics in the Dark Place that they</br>
+    can bring back to repair a mechanical dragon, but these components are scattered across the map in areas dense with danger."
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storyCircle5')"><span>Keep reading.</span></button></br>
+    <button onclick="changePage('storyCircle3')"><span>Go back.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+  <!-- FIND -->
+<div id="storyCircle5" hidden>
+  <p class="text-group">
+    "FIND.</br>
+    The protagonist eventually discovers the locations of the electrical components required to fix the dragon. At this point,</br>
+    the protagonist has attained a comprehensive knowledge of the dangers of the Dark Place and can navigate it quite well. All</br>
+    they have to do is collect all of the components and bring them back to the mechanical dragon."</br>
+    </br>
+    There's another note with an image here.
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storyCircle6')"><span>Keep reading.</span></button></br>
+    <button onclick="changePage('storyCircle4')"><span>Go back.</span></button></br>
+    <button onclick="changePage('completeMap')"><span>Look at note.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+<div id="completeMap" hidden>
+  <p class="text-group">
+    <div class="infoImgContainer">
+      <img class="infoImg" src="darkplaceMapComplete.jpeg"/>
+    </div>
+    <p class="imgCaption">A full map of the game world, provided by Steam user 'MattInSpace' in the Welcome to the Dark Place Steam Community</p>
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storyCircle5')"><span>Carry on.</span></button>
+  </div>
+</div>
+
+  <!-- TAKE -->
+<div id="storyCircle6" hidden>
+  <p class="text-group">
+    "TAKE.</br>
+    The protagonist collects the components at a great cost: they have now explored almost every major location in the game,</br>
+    including the infamous Dimlose forest, spitting in the face of danger eight individual times for all eight parts to repair</br>
+    the flying beast.
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storyCircle7a')"><span>Turn page.</span></button></br>
+    <button onclick="changePage('storyCircle5')"><span>Go back.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+  <!-- RETURN -->
+<div id="storyCircle7a" hidden>
+  <p class="text-group">
+    The text suddenly becomes small again; the writer has a lot to say here.
+    <p class="note">
+      "RETURN.</br>
+      The protagonist grabs hold of the dragon before flying off into the sky. They fly directly into the Cloud, the thing that</br>
+      dropped them in the Dark Place to begin with. It hangs over Dimlose, dropping fresh strikes directly into an aimless,</br>
+      mindless, hopeless life of infinite wandering. The cloud gets darker, and the dragon begins to malfunction. The protagonist</br>
+      sees another dragon rider close to them, and just as their own dragon catches fire and begins to fall, they jump out only</br>
+      to realize that the other person reaching out for them was their own shadow..."
+    </p> 
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storyCircle7b')"><span>Keep reading.</span></button></br>
+    <button onclick="changePage('storyCircle6')"><span>Go back.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+<div id="storyCircle7b" hidden>
+  <p class="text-group">
+    <p class="note">
+      "...They fall down, down into Dimlose, but instead of hitting the ground, they fall through the floor, unraveling the fabric of</br>
+      the Dark Place with a repeating revelation:</br>
+      'It wasn't real'."</br>
+    </p> 
+    Grim stuff.
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storyCircle8')"><span>Keep reading.</span></button></br>
+    <button onclick="changePage('storyCircle7a')"><span>Go back.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+  <!-- CHANGE -->
+<div id="storyCircle8" hidden>
+  <p class="text-group">
+    <p class="note">
+      "CHANGE.</br>
+      The protagonist stares into a furnace, slams their head against a pane of glass repeatedly, and they wake up (visibly</br>
+      represented by an inversion of color). They have an out-of-body experience, witnessing themself frothing at the mouth and</br>
+      writhing on the floor. They depart from the room their body is in, navigating through their hometown, down the street,</br>
+      into the forest, onto a train. As the train departs, the screen darkens. Though we never get confirmation, its safe to</br>
+      assume that the protagonist died back in that town. We join them on a train ride where they recognize parallels to the</br>
+      areas of the Dark Place through another lens, one of admiration. The sky darkens, and that is the end of their journey.
+    </p>
+    This section ends here, but one last note is stuck to the edge of the page.
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storyCircle7b')"><span>Go back.</span></button></br>
+    <button onclick="changePage('inversion')"><span>Look at note.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+<div id="inversion" hidden>
+  <p class="text-group">
+    <div class="infoImgContainer" hidden>
+      <img class="infoImg" src="darkplaceInversion.png"/>
+    </div>
+    <p class="imgCaption" hidden>The moment the protagonist sees themself writhing on the floor</p>
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('storyCircle8')"><span>Carry on.</span></button>
+  </div>
+</div>
+
+<!-- Comments Page -->
+<div id="comments" hidden>
+  <p class="text-group">
+    As I begin to turn to the comments page, the composition journal begins to bulge a bit. Suddenly, a chain of pages spill</br>
+    out violently from underneath the 'Comments' tab as if they were clothes bursting from an overstuffed luggage. There are</br>
+    a couple of sticky notes across the pages that have just spilt out marking important topics.
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('immersion')"><span>Look at 'Immersion'.</span></button></br>
+    <button onclick="changePage('dimloseReal')"><span>Look at 'Dimlose vs. the Real'.</span></button></br>
+    <button onclick="changePage('temporality1')"><span>Look at 'Temporality of the Undergoing'.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+<div id="commentsAgain" hidden>
+  <p class="text-group">
+    The 'Comments' pages are strewn about in a seemingly unending chain... it's overwhelming to look at.
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('immersion')"><span>Look at 'Immersion'.</span></button></br>
+    <button onclick="changePage('dimloseReal')"><span>Look at 'Dimlose vs. the Real'.</span></button></br>
+    <button onclick="changePage('temporality1')"><span>Look at 'Temporality of the Undergoing'.</span></button></br>
+    <button onclick="changePage('binderIntroAgain')"><span>Flip to a different tab.</span></button>
+  </div>
+</div>
+
+<div id="immersion" hidden>
+  <p class="text-group">
+    The paper curls under my thumb as I turn the page. There's nothing on this page, but I get to thinking about the paper curling</br>
+    under my thumb. That wasn't a necessary detail to include, was it? It was just imagery... lots of effective literature has imagery.</br>
+    But in a text-based game where being concise is so important, why include something so insignificant?</br>
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('immersionThoughts1')"><span>Dammit, can't stop this train of thought now...</span></button>
+  </div>
+</div>
+
+<div id="immersionThoughts1" hidden>
+  <p class="text-group">
+    I recall something Roland Barthes wrote about how insignificant details allow us to gain a feeling of "being there" in whatever is being</br>
+    described. I think of movies, television shows, and video games, and how insignificance typically presents itself through images</br>
+    rather than text in these mediums. When examining books, however, the writer must rely solely on imagery in written descriptions...</br>
+    A hybrid of book and game, a text-based game, relies on imagery in its writing and immense thoughtfulness in its employment of sound.
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('immersionThoughts2')"><span>Maybe all this thinking isn't so bad!</span></button></br>
+    <button onclick="changePage('immersionThoughts2')"><span>That's enough thinking...</span></button>
+  </div>
+  <p class="citation">
+    Barthes, Roland. "The Reality Effect" in The Rustle of Language Richard Howard (Berkeley, CA: UC Press, 1984 (1968)).
+  </p>
+</div>
+
+<div id="immersionThoughts2" hidden>
+  <p class="text-group">
+    No, it's really not! I've barely scratched the surface. Each and every sound in a text-based game has to be designed with the utmost</br>
+    attention to detail in mind. This is not to say you can cheap out on sound design in other games, but it's especially important in</br>
+    text-based ones due to the lack of visual accompaniment other than text. A video begins to play in my head of a moment of <i>Welcome to</br>
+    the Dark Place</i> that seems to embody this idea. We go through a full range of diegetic and non diegetic soundscape to solely diegetic</br>
+    sound, and then to non-diegetic music, and finally to complete silence.</br>
+    <div class="infoImgContainer">
+      <video controls style="width: 60%">
+        <source src="lostInDimlose.mp4">
+      </video>
+    </div>
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('tuckeredOut')"><span>More thinking!!!</span></button>
+  </div>
+</div>
+
+<div id="tuckeredOut" hidden>
+  <p class="text-group">
+    I need to calm down or my brain will be mush and there won't be any thinking left to do. Let me turn to a page where there's actually</br>
+    something written.
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('commentsAgain')"><span>Go back.</span></button>
+  </div>
+</div>
+
+<div id="dimloseReal" hidden>
+  <p class="text-group">
+    This section contains a venn diagram that appears to compare the <i>Welcome to the Dark Place's</i> Dimlose with Lacan's 'the Real'</br>
+    in terms of how scary they are to the writer. There is a message in all caps at the bottom of the page:</br>
+    </br>
+    "THE REAL. BY A LANDSLIDE."
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('dimloseSide')"><span>Read the 'Dimlose' side.</span></button></br>
+    <button onclick="changePage('realSide')"><span>Read the 'The Real' side.</span></button></br>
+    <button onclick="changePage('middle')"><span>Read the middle.</span></button></br>
+    <button onclick="changePage('commentsAgain')"><span>Go back.</span></button></br>
+  </div>
+</div>
+
+<div id="dimloseSide" hidden>
+  <p class="text-group">
+    It's quite concise:</br>
+    </br>
+    "Has rules. Can technically survive in it. Recognizable by tree pattern."
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('dimloseReal')"><span>Go back.</span></button></br>
+  </div>
+</div>
+
+<div id="middle" hidden>
+  <p class="text-group">
+    The middle of the graph contains the least out of all three areas:</br>
+    </br>
+    "Deeply traumatic."</br>
+    </br>
+    There's an arrow pointing away from the middle section to a folded up note hanging from the page by a staple.
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('middleNote')"><span>Read the note.</span></button></br>
+    <button onclick="changePage('dimloseReal')"><span>Go back.</span></button></br>
+  </div>
+</div>
+
+<div id="middleNote" hidden>
+  <p class="text-group">
+    I unfold the note:</br>
+    </br>
+    "I need to just rewrite this; the trauma from Dimlose and 'the Real' are different. Operating off of Freudian definitions,</br>
+    Dimlose evokes both fear (from word of mouth, outside Dimlose) and anxiety (from an unknown experience, inside Dimlose), but</br>
+    the Real (as a hypothetical environment) evokes constant, unmitigated, shock at all times and cannot be symbolized in any way.""
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('dimloseReal')"><span>Go back.</span></button></br>
+  </div>
+  <p class="citation">
+    Lacan, Jacques. <i>The Seminar of Jacques Lacan, Book I: Freud's Papers on Technique, 1953–1954.</i> Edited by Jacques-Alain Miller, translated by John Forrester. (New York: Norton, 1988).</br>
+    Freud, Sigmund. <i>Beyond the Pleasure Principle.</i> James Strachey (New York and London: Norton, 1990 (1920)).
+  </p>
+</div>
+
+<div id="realSide" hidden>
+  <p class="text-group">
+    Just a few words here:</br>
+    </br>
+    "Can't avoid, resists symbolization. Neither imaginary nor symbolic. Unmediated, uncapturable, unbound by rules."</br>
+    </br>
+    There's some stray ink on the page here; the writer must have applied more pressure with the pen. 
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('dimloseReal')"><span>Go back.</span></button></br>
+  </div>
+  <p class="citation">
+    Lacan, Jacques. <i>The Seminar of Jacques Lacan, Book I: Freud's Papers on Technique, 1953–1954.</i> Edited by Jacques-Alain Miller, translated by John Forrester. (New York: Norton, 1988).
+  </p>
+</div>
+
+<div id="temporality1" hidden>
+  <p class="text-group">
+    This section speaks of a place which defies spatiality in <i>Welcome to the Dark Place</i>: the Undergoing.</br>
+    </br>
+    "The Undergoing temporalizes a game where time is otherwise insignificant. By adding unsettling audio (53 seconds</br>
+    of distorted, ramping ambience), the player begins to feel a sense of urgency before they even learn that there is</br>
+    a timer involved."</br>
+    </br>
+    I recall the sounds of the Undergoing before moving on:</br>
+    <audio controls style="display: block; height: 20px">
+      <source src="undergoing.wav">
+    </audio>
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('temporality2')"><span>Keep reading.</span></button></br>
+    <button onclick="changePage('commentsAgain')"><span>Go back.</span></button></br>
+  </div>
+</div>
+
+<div id="temporality2" hidden>
+  <p class="text-group">
+    "By creating this sense of urgency, the player now has less time to develop a linguistic coding to the affect of each</br>
+    room (derive emotion from the contents of the rooms). This can lead to poor decision-making and even death whilst</br>
+    navigating the relatively small area."
+  </p>
+  <div class="button-group">
+    <button onclick="changePage('temporality1')"><span>Go back.</span></button></br>
+    <button onclick="changePage('commentsAgain')"><span>Examine other topics.</span></button></br>
+  </div>
+  <p class="citation">
+    Massumi, Brian. "The Autonomy of Affect" in <i>Cultural Critique</i>. number 31. Autumn 1995.
+  </p>
+</div>
+
+<div id="template" hidden>
+  <p class="text-group">
+
+  </p>
+  <div class="button-group">
+
+  </div>
+</div>
+
 
 <script src="gameNav.js"></script>
